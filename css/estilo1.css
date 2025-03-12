@@ -1,0 +1,9 @@
+body {background-color: blueviolet;
+    background-image: url(../images/diasnublados.jpg);}
+.especial {color: olivedrab;}
+h1 {font-size: 28px;
+    word-spacing: 6px;}
+table,td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
