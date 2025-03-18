@@ -6,34 +6,94 @@
 
 body {
     margin: 0 auto;
-    width: 50%;
-    border: 5px solid black;
-    background-color: blueviolet;
-}   
+    width: 100%;
+    border: 5px solid #4a4a4a;
+    background-color: #f0f0f5;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
 
 header {
-    background-color: #333;
-    color: white;
-    text-align: center; 
-    border: white 2px solid;
-}
-article {
-    background-color: #f4f4f4;
-    border: 2px solid black;
-    padding: 10px;
-    margin: 10px;
-    color: black;
-}
-footer {
-    background-color: #333;
+    background-color: #4a90e2;
     color: white;
     text-align: center;
-    border: white 2px solid;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
-aside {
-    background-color: #f4f4f4;
-    border: 2px solid black;
-    padding: 10px;
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-between; /* Asegura que aside esté a la derecha */
+}
+
+article {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
     margin: 10px;
-    color: black;
+    color: #333;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    order: 1; /* Asegura que los artículos estén antes del aside */
 }
+
+footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+aside {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    color: #333;
+    flex: none; /* Evita que el aside cambie de tamaño basado en el espacio disponible */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    order: 2; /* Mueve el aside al final del flujo */
+    height: 500px; /* Incrementa la altura del aside */
+}
+
+<!-- aqui se define el estilo del menu
+
+
+nav {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+nav ul {
+    text-align: center;
+    vertical-align: top;
+
+}
+nav ul li {
+    display: inline;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+ nav ul li a {
+    color: #000;
+ }
