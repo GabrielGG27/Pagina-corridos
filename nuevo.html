@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=favorite" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Kaushan Script", cursive;;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /*Caracteristicas del main que contiene el article y el aside*/
+        main{
+            display: flex;
+            flex: 1;
+        }
+        section{
+            flex: 1;
+            background-color:beige;
+            color: black;
+            padding: 20px;
+        }
+        aside{
+            width: 350px;
+            background-color: grey;
+            color: white;
+            
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media(max-width: 768px){
+            main{
+                flex-direction: column;
+            }
+            aside{
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+    <body>
+    <header>Este es el header</header>
+    <id class="container">
+        <main>
+            <aside>Este es el aside</aside>
+            <section>Este es el article</section>
+        </main>
+    </id>
+    <footer>Este es el footer<br>
+        <span class="material-symbols-outlined">
+            favorite
+            </span>
+    </footer>
+    </body>
+</html>

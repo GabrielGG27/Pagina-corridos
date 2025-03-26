@@ -32,6 +32,8 @@ main {
     gap: 20px;
     padding: 20px;
     justify-content: space-between; /* Asegura que aside esté a la derecha */
+    align-items: flex-start; /* Asegura que aside esté alineado con el inicio de los artículos */
+    
 }
 
 article {
@@ -97,3 +99,4 @@ nav ul li {
  nav ul li a {
     color: #000;
  }
+
