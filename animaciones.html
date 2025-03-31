@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #boton {
+            display: block;
+            background-color: yellow;
+            width: 200px;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        #boton:hover {
+            background-color: red;
+            font-size: 20px;
+            transition: all 0.5s ease-in-out;
+        }
+        #caja1 {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            margin-top: 20px;
+            clip-path: circle(50% at top left);
+            transition-property: clip-path;
+            transition-duration: 5s;
+            transition-timing-function: ease;
+            transition-delay: 0.5s;
+        }
+
+        .contenedor:hover #caja1 {
+            clip-path: circle(150% at top left);
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de transicion y animacion</h1>
+    <a id="boton" href="#">Enlace al ipn</a>
+
+    <div class="contenedor">
+        <div id="caja1">Esta es la caja 1</div>
+    </div>
+    <div id="caja 2"></div>
+</body>
+</html>
