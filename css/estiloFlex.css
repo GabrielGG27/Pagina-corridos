@@ -1,0 +1,43 @@
+body {
+    --rojito: red;
+    --verde: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.caja {
+    background-color: blueviolet;
+    border: 2px purple double;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+#layout {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-flow: row wrap;
+    height: 600px;
+    align-items: flex-end;
+}
+
+.red {
+    background-color: var(--rojito);
+    order: 2;
+}
+
+.green {
+    background-color: var(--verde);
+    order: 1;
+}
+
+.orange {
+    background-color: orange;
+    order: 3;
+}
+
+.blue {
+    background-color: blue;
+    order: 4;
+}
+
